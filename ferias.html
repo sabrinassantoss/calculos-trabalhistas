@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo Ferias</title>
+</head>
+
+<body>
+    <script>
+        let salarioFuncionario = parseFloat(prompt("Digite o salário do funcionário: "));;
+        let tercoFerias;
+        let feriasEsalario;
+
+        tercoFerias = salarioFuncionario / 3;
+        feriasEsalario = salarioFuncionario + tercoFerias;
+
+        document.write(`O salário do funcionário é: R$${salarioFuncionario.toFixed(2)}.`);
+        document.write("<br>");
+        document.write(` O terço das férias é de: R$ ${tercoFerias.toFixed(2)}`);
+        document.write("<br>");
+        document.write(`O valor total que o funcionário receberá referente as férias é de: R$${feriasEsalario.toFixed(2)}.`);
+    </script>
+
+</body>
+
+</html>
+

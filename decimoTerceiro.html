@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimo Terceiro</title>
+</head>
+
+<body>
+    <script>
+        let salarioFuncionario;
+        let mesesTrabalhados;
+        let divisaoValor;
+        let decimoTerceiro;
+
+        while (true) {
+            salarioFuncionario = parseFloat(prompt('Digite o salário do funcionário: '));
+            if (salarioFuncionario <= 0) {
+                alert('O salário deve ser maior que 0. Tente novamente.');
+                continue;
+            }
+
+            mesesTrabalhados = parseInt(prompt('Digite os meses trabalhados do funcionário: '));
+            if (mesesTrabalhados < 1 || mesesTrabalhados > 12) {
+                alert('Os meses trabalhados devem ser entre 1 e 12. Tente novamente.');
+                continue;
+            }
+            break;
+        }
+        divisaoValor = salarioFuncionario / 12;
+        decimoTerceiro = divisaoValor * mesesTrabalhados;
+
+        document.write(`O salário do funcionário é: R$${salarioFuncionario.toFixed(2)}.`);
+        document.write("<br>");
+        document.write(`O funcionário trabalhou ${mesesTrabalhados} meses no ano vigente.`);
+        document.write("<br>");
+        document.write(`O décimo terceiro desse funcionário é: R$${decimoTerceiro.toFixed(2)}.`);
+    </script>
+</body>
+
+</html>
+
+
+
